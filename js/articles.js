@@ -1,5 +1,5 @@
 import { createNewElement, appendElement } from './helpers.js';
-const url = 'http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/';
+const url = 'https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/';
 
 
 // Get article from API
