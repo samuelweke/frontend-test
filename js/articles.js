@@ -34,7 +34,7 @@ export default function article(){
 
             const p = createNewElement('p')
             p.className = "article-title";
-            p.innerHTML = article.title; 
+            p.innerHTML = article.title;
 
             const button = createNewElement('button')
             button.className = "btn";
