@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Frontend Engineer Test</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Frontend Test</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+         crossorigin="anonymous"> -->
+         <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main role="main">
+            <header>
+                <div class="navbar">
+                    <div class="container">
+                        <a href="#" class="navbar-text">
+                            <strong>Article</strong>
+                        </a>
+                        <button id="addArticleBtn" class="btn btn-article">Add Article</button>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="articles">
+                <div class="container">
+                    <div class="row" id="row">
+                    </div>
+                    <nav>
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a id="previous" class="page-link" href="#">Previous</a>
+                          </li>
+                          <li class="page-item">
+                            <a id="next" class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            
+            <section class="add-article-form">
+                <div class="container">
+                    <form id="addArticle">
+                        <div class="form-group">
+                          <label for="author">Author</label>
+                          <input type="text" class="form-style" id="author" placeholder="Enter Author" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="avatar">Avatar</label>
+                          <input type="file" id="avatar" class="form-style" name="myImage" accept="image/x-png,image/jpeg" />
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-style" id="title" placeholder="Enter Title" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="url">Url</label>
+                        <input type="text" class="form-style" id="url" placeholder="Enter Url" required>
+                        </div>
+                        <button id="discardArticle" type="button" class="btn btn-discard">Discard</button>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+        
+    <script type="module" src="./js/main.js"></script>
+    </body>
 </html>
